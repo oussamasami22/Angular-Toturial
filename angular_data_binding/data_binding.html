@@ -1,0 +1,25 @@
+var app = angular.module('myApp', []);
+app.controller('myCtrl', function($scope) {
+  $scope.firstname = "John";
+  $scope.lastname = "Doe";
+});
+
+
+
+
+
+
+
+
+<div ng-app="myApp" ng-controller="myCtrl">
+    Name: <input ng-model="firstname">
+    <h1>{{firstname}}</h1>
+  </div>
+  
+  <script>
+  var app = angular.module('myApp', []);
+  app.controller('myCtrl', function($scope) {
+    $scope.firstname = "John";
+    $scope.lastname = "Doe";
+  });
+  </script>
